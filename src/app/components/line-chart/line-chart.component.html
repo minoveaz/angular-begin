@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-subtitle>
+        Line Chart - ChartJs
+    </mat-card-subtitle>
+    <mat-card-content>
+        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+        </canvas>
+    </mat-card-content>
+    <mat-card-actions>
+        <a [href]="" mat-button mat-raised-button target="_blank">
+            show Chart
+        </a>
+        <button mat-button mat-flat-button color="primary" (click)="shuffeData()">
+            Random
+        </button>
+    </mat-card-actions>
+</mat-card>
